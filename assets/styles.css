@@ -1,0 +1,77 @@
+/* assets/styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+:root {
+    --primary-glow: #00f2ff;
+    --secondary-glow: #7000ff;
+    --bg-dark: #0a0e14;
+    --card-bg: rgba(20, 26, 35, 0.7);
+}
+
+.stApp {
+    background: linear-gradient(135deg, #0a0e14 0%, #1a1f2c 100%);
+    color: #e0e0e0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-title {
+    background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.metric-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.metric-card:hover {
+    border-color: var(--primary-glow);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.stMetric label {
+    font-family: 'Orbitron', sans-serif !important;
+    color: var(--primary-glow) !important;
+}
+
+.sidebar .stSelectbox label {
+    color: var(--primary-glow) !important;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0e14;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-glow);
+    border-radius: 10px;
+}
+
+.glass-header {
+    background: rgba(10, 14, 20, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 242, 255, 0.1);
+}
